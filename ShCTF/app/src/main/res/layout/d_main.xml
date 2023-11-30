@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="src_in"
+    android:layoutDirection="ltr"
+    tools:context=".DActivity">
+
+    <EditText
+        android:id="@+id/etext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#F6E71D"
+        android:textCursorDrawable="@drawable/color_curser"
+        android:gravity="center"
+        android:hint="here"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7"
+        tools:ignore="HardcodedText" />
+
+    <com.example.myloadingbutton.MyLoadingButton
+        android:id="@+id/b"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etext"
+        app:layout_constraintWidth_percent="0.5"
+        app:mlb_animationDuration="500"
+        android:animationCache="false"
+        android:scrollbarFadeDuration="500"
+        app:mlb_backgroundColor="#F6E71D"
+        app:mlb_label="check serial"
+        app:mlb_labelColor="#020202"
+        app:mlb_labelSize="8sp"
+        app:mlb_loaderColor="#020202"
+        app:mlb_setDoneIcon="@drawable/ic_progress_done"
+        app:mlb_setErrorIcon="@drawable/ic_progress_cancle"
+        app:mlb_setNormalAfterError="false"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
